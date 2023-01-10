@@ -10,27 +10,27 @@ const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
-  const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
+  // const scroll = (node, left) => {
+  //   return node.scrollTo({ left, behavior: 'smooth' });
+  // }
 
-  const handleClick = (e, i) => {
-    e.preventDefault();
+  // const handleClick = (e, i) => {
+  //   e.preventDefault();
 
-    if (carouselRef.current) {
-      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
+  //   if (carouselRef.current) {
+  //     const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
       
-      scroll(carouselRef.current, scrollLeft);
-    }
-  }
+  //     scroll(carouselRef.current, scrollLeft);
+  //   }
+  // }
 
-  const handleScroll = () => {
-    if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
+  // const handleScroll = () => {
+  //   if (carouselRef.current) {
+  //     const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
 
-      setActiveItem(index);
-    }
-  }
+  //     setActiveItem(index);
+  //   }
+  // }
 
   // snap back to beginning of scroll when window is resized
   // avoids a bug where content is covered up if coming from smaller screen
@@ -46,11 +46,11 @@ const Timeline = () => {
     <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I&apos;m Modupe, but people call me “Goke.” I&apos;m a frontend developer, and I specialize in efficient React apps and CSS & HTML that just work across all platforms and browsers. I care deeply about building interfaces that are usable and pleasant for the most number of people possible.
+        I&apos;m Modupe, but people call me &quot;Goke.&quot; I&apos;m a frontend developer, and I specialize in efficient React apps and CSS & HTML that just work across all platforms and browsers. I care deeply about building interfaces that are usable and pleasant for the most number of people possible.
 
-        My professional life has been 100% driven by my passion for design and structure. I&apos;ve had the opportunity to intern at a talent development agency "Zuri", where I was able to utilise skills learnt to collaborate with developers, provide solutions to problems and work on projects. After that, I was a front-end developer at Techaton, where I worked on projects weekly that involved bringing beautiful modern UI/UX designs to life.
+        My professional life has been 100% driven by my passion for design and structure. I&apos;ve had the opportunity to intern at a talent development agency &quot;Zuri&quot;, where I was able to utilise skills learnt to collaborate with developers, provide solutions to problems and work on projects. After that, I was a front-end developer at Techaton, where I worked on projects weekly that involved bringing beautiful modern UI/UX designs to life.
 
-        Right now, I&apos;m excited about the still very complicated Web3, and working towards becoming a React senior. In the following years, I also plan to explore the “server-side” more and become a better-rounded full-stack dev.
+        Right now, I&apos;m excited about the still very complicated Web3, and working towards becoming a React senior. In the following years, I also plan to explore the &quot;server-side&quot; more and become a better-rounded full-stack dev.
       </SectionText>
     {/* <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
       <>
