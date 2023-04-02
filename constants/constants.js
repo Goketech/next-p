@@ -38,7 +38,7 @@ export const projects = [
   {
     title: 'Movie Trailer',
     description: "movie trailer app built using React, Axios, and the MovieDB API, which allows users to search for movies by title and view their details, including rating, release date, overview, and trailer. The app provides a responsive and accessible user interface, and it fetches movie data in real-time from the MovieDB API and movie trailers from the YouTube API.",
-    image: '/images/5.png',
+    image: '/images/5.jpg',
     tags: ['React', 'Axios', 'Youtube API', 'TMD API'],
     source: 'https://github.com/Goketech/movie-trailer-app',
     visit: 'https://movie-trailer-app-lake.vercel.app/',
