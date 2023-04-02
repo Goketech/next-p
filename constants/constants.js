@@ -1,16 +1,16 @@
 export const projects = [
   {
     title: 'Hoo Bank',
-    description: "Using React and Tailwind, I built a mobile responsive bank website by transforming a UI/UX design into reality.",
+    description: "The website is a landing page for a financial technology startup, which offers online banking, savings, and investment services. The landing page has a modern design, featuring responsive layouts for improved user experience across various devices",
     image: '/images/1.png',
-    tags: ['React', 'Node', 'Vite'],
+    tags: ['React', 'Node', 'Vite', 'Tailwind'],
     source: 'https://github.com/Goketech/bank_modern_app',
     visit: 'https://bank-modern-app-r9rw.vercel.app/',
     id: 0,
   },
   {
-    title: 'Restaurant',
-    description:"Created a beautiful frontend restaurant site. It contains Hero Section, About, History, Menu, Chef, full screen video and lot's more.",
+    title: 'Gerich Restaurant',
+    description:"Gerich Restaurant is a modern and stylish website that showcases the menu and services of a restaurant. The website features a clean and elegant design that create an immersive and engaging user experience. The website is built using the latest web technologies such as React, CSS, and it is optimized for both desktop and mobile devices. ",
     image: '/images/2.png',
     tags: ['React', 'JavaScript'],
     source: 'https://github.com/Goketech/gerich-restaurant',
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: 'AI Website',
-    description: "This is a .",
+    description: "GPT-3 Goke is a static web page that provides information about OpenAI's GPT-3 language model. The page includes details about the model's capabilities, sample use cases, and a blog section. The website has a simple and intuitive design that makes it easy for users to navigate and find the information they need. ",
     image: '/images/3.png',
     tags: ['React'],
     source: 'https://github.com/Goketech/gpt3_goke',
@@ -28,12 +28,21 @@ export const projects = [
   },
   {
     title: 'Netflix-clone',
-    description: "Created a Netflix movie Web App that fetches current and Trending using the movie database API.",
+    description: "Created a Netflix movie Web App that fetches current and Trending movies using the movie database API.",
     image: '/images/4.png',
     tags: ['React', 'Tailwind', 'Firebase', 'TMD API'],
     source: 'https://github.com/Goketech/netflix',
     visit: 'https://netflix-ten-iota.vercel.app/',
     id: 3,
+  },
+  {
+    title: 'Movie Trailer',
+    description: "movie trailer app built using React, Axios, and the MovieDB API, which allows users to search for movies by title and view their details, including rating, release date, overview, and trailer. The app provides a responsive and accessible user interface, and it fetches movie data in real-time from the MovieDB API and movie trailers from the YouTube API.",
+    image: '/images/4.png',
+    tags: ['React', 'Axios', 'Youtube API', 'TMD API'],
+    source: 'https://github.com/Goketech/movie-trailer-app',
+    visit: 'https://movie-trailer-app-lake.vercel.app/',
+    id: 4,
   },
 ];
 
